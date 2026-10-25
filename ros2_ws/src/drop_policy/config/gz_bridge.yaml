@@ -1,0 +1,21 @@
+# ros_gz_bridge for the drop-policy sim-to-sim test (payload ground truth + drop command only)
+- ros_topic_name: "/drop/payload/odom"
+  gz_topic_name: "/model/payload_drop/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/drop/payload/drop_cmd"
+  gz_topic_name: "/x500_drop/drop"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/drop/drone/odom"
+  gz_topic_name: "/model/x500_drop/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS

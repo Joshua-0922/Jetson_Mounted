@@ -1,0 +1,103 @@
+#!/bin/sh
+#
+# @name Gazebo x500 Drop (Isaac Lab drop-policy airframe)
+#
+# @type Quadrotor
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+PX4_SIMULATOR=${PX4_SIMULATOR:=gz}
+PX4_GZ_WORLD=${PX4_GZ_WORLD:=default}
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=x500_drop}
+
+param set-default SIM_GZ_EN 1
+
+param set-default SENS_EN_GPSSIM 1
+param set-default SENS_EN_BAROSIM 0
+param set-default SENS_EN_MAGSIM 1
+
+param set-default CA_AIRFRAME 0
+param set-default CA_ROTOR_COUNT 4
+
+param set-default CA_ROTOR0_PX 0.13
+param set-default CA_ROTOR0_PY 0.22
+param set-default CA_ROTOR0_KM  0.05
+
+param set-default CA_ROTOR1_PX -0.13
+param set-default CA_ROTOR1_PY -0.20
+param set-default CA_ROTOR1_KM  0.05
+
+param set-default CA_ROTOR2_PX 0.13
+param set-default CA_ROTOR2_PY -0.22
+param set-default CA_ROTOR2_KM -0.05
+
+param set-default CA_ROTOR3_PX -0.13
+param set-default CA_ROTOR3_PY 0.20
+param set-default CA_ROTOR3_KM -0.05
+
+param set-default SIM_GZ_EC_FUNC1 101
+param set-default SIM_GZ_EC_FUNC2 102
+param set-default SIM_GZ_EC_FUNC3 103
+param set-default SIM_GZ_EC_FUNC4 104
+
+param set-default SIM_GZ_EC_MIN1 150
+param set-default SIM_GZ_EC_MIN2 150
+param set-default SIM_GZ_EC_MIN3 150
+param set-default SIM_GZ_EC_MIN4 150
+
+param set-default SIM_GZ_EC_MAX1 1116
+param set-default SIM_GZ_EC_MAX2 1116
+param set-default SIM_GZ_EC_MAX3 1116
+param set-default SIM_GZ_EC_MAX4 1116
+
+param set-default MPC_THR_HOVER 0.50
+
+# Bypass EKF yaw preflight check
+param set COM_ARM_WO_GPS 1
+
+# SITL-only: disable roll failure detector.
+# FD_FAIL_R=0 disables the check (condition: max_roll > FLT_EPSILON).
+# At RTF>1, DDS time-sync disruptions cause brief EKF attitude errors >60 deg,
+# setting FAILURE_ROLL which blocks re-arming after each episode reset.
+param set FD_FAIL_R 0
+
+# SITL-only: disable simulated battery drain.
+# Default SIM_BAT_DRAIN=60 mAh/s drains the battery over long training sessions.
+# With persistent PX4, the battery hits BAT_CRIT_THR (7%) and triggers
+# failsafe, blocking re-arming. Setting SIM_BAT_DRAIN=0 disables drain.
+param set SIM_BAT_DRAIN 0
+
+# SITL-only: disable magnetometer strength and consistency checks.
+# RTF>1 DDS time sync disruptions cause magnetometer spikes → EKF reports
+# 'Compass needs calibration' → Arming denied. Disable these runtime checks
+# since the simulated mag is known-good in SITL.
+param set EKF2_MAG_CHECK 0
+param set COM_ARM_MAG_STR 0
+param set COM_ARM_MAG_ANG 180
+
+# SITL-only: increase OFFBOARD link loss timeout.
+# 10.0s: episode reset kills drone_controller (OFFBOARD stops).  The new
+# drone_controller has a 5s EKF warmup (100 ticks @ 20 Hz) before sending its
+# first arm+OFFBOARD command.  10s timeout gives the new controller a 5s
+# safety margin to establish OFFBOARD before PX4 falls back to AUTO.LAND.
+# (Previously 5.0s matched EKF warmup exactly → race condition.)
+param set COM_OF_LOSS_T 10.0
+
+# SITL-only: disable uXRCE-DDS timestamp synchronization.
+# UXRCE_DDS_SYNCT=0 prevents PX4 from syncing its internal clock to the agent,
+# eliminating 'time jump detected' events that cause EKF velocity to become NaN
+# (→ 'Failsafe: blind land' → NaN motor commands → Gazebo ODE AABB crash).
+# At RTF=1, ROS2 sim-time ≈ PX4 POSIX clock, so OFFBOARD setpoints work correctly
+# without sync. Do NOT use with RTF>1 (ROS2 sim-time diverges from PX4 clock).
+param set UXRCE_DDS_SYNCT 0
+
+# --- Isaac Lab parity (2026-10-11): limits the policy was trained/aligned against ---
+# T/W 2.0 -> hover thrust 0.5 (ESC max 1116 rad/s above). Tilt 35 deg as in the Isaac controller.
+# Offboard velocity setpoints are clamped to MPC_Z_VEL_MAX_DN (default 1.5) -- the policy commands up
+# to 3 m/s down, so raise it. 'param set' (not set-default) so stale saved params cannot override.
+param set MPC_THR_HOVER 0.50
+param set MPC_TILTMAX_AIR 35
+param set MPC_Z_VEL_MAX_DN 3.0
+param set MPC_Z_VEL_MAX_UP 3.0
+param set MPC_XY_VEL_MAX 12.0

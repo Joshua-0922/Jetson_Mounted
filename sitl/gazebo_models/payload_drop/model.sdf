@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!--
+  payload_drop - the Isaac Lab payload (isaac_lab drone_bombard_env payload_phys_*):
+  cylinder radius 0.05 m, height 0.06 m, 0.1 kg; air drag k = 0.005 N/(m/s)^2 (k/m = 0.05 /m, the
+  same ballistic coefficient the Isaac plant uses). Drag is Hydrodynamics quadratic damping relative to
+  the "current" topic = wind. 3D-print target for the real payload.
+-->
+<sdf version="1.9">
+  <model name="payload_drop">
+    <link name="payload_link">
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>9.25e-05</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>9.25e-05</iyy><iyz>0</iyz><izz>1.25e-04</izz>
+        </inertia>
+      </inertial>
+      <visual name="payload_visual">
+        <geometry><cylinder><radius>0.05</radius><length>0.06</length></cylinder></geometry>
+        <material><ambient>0.8 0.0 0.0 1</ambient><diffuse>0.8 0.0 0.0 1</diffuse></material>
+      </visual>
+      <collision name="payload_collision">
+        <geometry><cylinder><radius>0.05</radius><length>0.06</length></cylinder></geometry>
+        <surface><contact><ode><kp>100000.0</kp><kd>100.0</kd><max_vel>0.0</max_vel><min_depth>0.002</min_depth></ode></contact></surface>
+      </collision>
+    </link>
+    <plugin filename="gz-sim-hydrodynamics-system" name="gz::sim::systems::Hydrodynamics">
+      <link_name>payload_link</link_name>
+      <xUabsU>-0.005</xUabsU><yVabsV>-0.005</yVabsV><zWabsW>-0.005</zWabsW>
+      <kPabsP>0</kPabsP><mQabsQ>0</mQabsQ><nRabsR>0</nRabsR>
+      <xU>0</xU><yV>0</yV><zW>0</zW><kP>0</kP><mQ>0</mQ><nR>0</nR>
+      <disable_coriolis>true</disable_coriolis><disable_added_mass>true</disable_added_mass>
+    </plugin>
+    <plugin name="gz::sim::systems::OdometryPublisher" filename="gz-sim-odometry-publisher-system">
+      <odom_frame>world</odom_frame>
+      <robot_base_frame>payload_drop</robot_base_frame>
+      <odom_publish_frequency>100</odom_publish_frequency>
+      <dimensions>3</dimensions>
+    </plugin>
+  </model>
+</sdf>
