@@ -1,0 +1,926 @@
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+Loading /home/hoyaaa04/yolo_models/yolo11n.engine for TensorRT inference...
+[10/28/2026-08:23:14] [TRT] [I] Loaded engine size: 8 MiB
+[10/28/2026-08:23:14] [TRT] [I] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +9, now: CPU 0, GPU 14 (MiB)
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+running /home/hoyaaa04/yolo_models/yolo11n.engine on /usr/src/jetson_multimedia_api/data/Video/sample_outdoor_car_1080p_10fps.h264 at 10.0 fps for 75 s
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+WARNING ⚠️ 'source' is missing. Using 'source=/home/hoyaaa04/yolo-venv/lib/python3.12/site-packages/ultralytics/assets'.
+WARNING ⚠️ 'half' is deprecated and will be removed in the future. Use 'quantize' instead.
+achieved 10.0 fps, 751 frames, 6.3 det/frame
+  preprocess_ms      p50  12.31  p95  14.01  p99  14.07  max  14.40
+  inference_ms       p50  13.57  p95  13.82  p99  13.88  max  15.40
+  postprocess_ms     p50   7.40  p95   8.24  p99  11.50  max  12.16
+  grab_to_result_ms  p50  47.87  p95  76.09  p99  78.24  max  82.23

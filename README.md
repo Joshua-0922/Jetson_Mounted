@@ -10,7 +10,7 @@ Jetson(컴패니언 컴퓨터)에서 Pixhawk(PX4)를 offboard 속도 명령으�
 | `ros2_ws/src/drop_policy` | 정책 추론 + 미션 상태기계 ROS 2 노드 (numpy 전용, torch 불필요). 가중치는 `models/drop_policy_models.npz` |
 | `ros2_ws/src/drone_controller` | 속도 명령을 PX4 `TrajectorySetpoint`(offboard)로 보내는 노드 |
 | `sitl/gazebo_models` | Gazebo 기체·페이로드·월드와 PX4 airframe(`4900_gz_x500_drop`). Jetson 또는 PC에서 SITL 검증할 때 사용 |
-| `scripts/` | Jetson 설치(`setup_jetson.sh`)·점검(`verify_jetson.sh`), Pixhawk USB uXRCE-DDS 설정(`px4_usb_xrce.py`), 링크 지연 측정(`measure_link_latency.py`) |
+| `scripts/` | Jetson 설치(`setup_jetson.sh`)·점검(`verify_jetson.sh`), Pixhawk USB uXRCE-DDS 설정(`px4_usb_xrce.py`), 링크 지연 측정(`measure_link_latency.py`), YOLO 부하(`yolo_load.py`) |
 | `measurements/` | 실측 원자료(JSON) |
 | `docs/` | 배포 스택 결정(`sim2real_firmware_stack`)과 시뮬 제어기 정렬(`sim2real_controller_alignment`) |
 
@@ -80,29 +80,43 @@ PX4 v1.16은 USB에서 MAVLink·NSH·u-blox만 자동 시작합니다. uXRCE-DDS
 MicroXRCEAgent serial --dev /dev/pixhawk -b 921600      # udev 규칙이 없으면 /dev/ttyACM0
 ```
 
-## 링크 지연 실측 (USB uXRCE-DDS)
+## 링크 지연 실측 (USB uXRCE-DDS, YOLO 부하 포함)
 
-2026-10-28, 지상·시동 꺼짐·무부하(측정 스크립트만 실행), 60초. 원자료: `measurements/link_usb_20261028_0014.json`.
+2026-10-28 08:22, 지상·시동 꺼짐, Jetson 25W 모드, 조건별 60초. 원자료: `measurements/link_usb_20261028_0822_{A,B,C}*`
+(링크 JSON, YOLO JSON, tegrastats 로그). YOLO는 `yolo11n` TensorRT FP16 엔진(640×640)에 예제 영상
+(`/usr/src/jetson_multimedia_api/data/Video/sample_outdoor_car_1080p_10fps.h264`, 1080p)을 반복해서 넣었습니다(`scripts/yolo_load.py`).
 
-| 항목 | p50 | p95 | p99 | 최대 |
-|---|---|---|---|---|
-| Pixhawk → Jetson 편도 (`vehicle_odometry` 발행 → ROS 2 수신) | **2.99 ms** | 4.34 | 5.92 | 10.8 |
-| 센서 샘플 → ROS 2 수신 (`timestamp_sample` 기준) | 3.67 ms | 5.02 | 6.60 | 11.5 |
-| 명령 왕복 (Jetson `VehicleCommand` → PX4 ACK, 1199/1200 응답) | 9.10 ms | 15.5 | 19.4 | 24.7 |
-| PX4 timesync 왕복 | 0.74 ms | 0.99 | 1.10 | 1.18 |
-| `vehicle_odometry` 수신률 | **98.8 Hz** (간격 p50 10.1 ms, p95 11.6 ms) | | | |
+| 조건 | Jetson 부하 | 편도 Pixhawk→Jetson (보정) p50 / p95 / 최대 | 센서 샘플→수신 p50 / p95 | 명령 왕복 p50 / p95 / 최대 (손실) | 오도메트리 |
+|---|---|---|---|---|---|
+| A. 무부하 | CPU 10%, GPU 0% | 5.2 / 9.2 / 15.0 ms | 6.1 / 10.0 ms | 10.5 / 17.0 / 22.1 ms (0/1200) | 100.0 Hz, 간격 p99 12.0 ms |
+| B. YOLO 10 fps | CPU 21%, GPU 14% | 5.3 / 9.2 / 14.1 ms | 6.2 / 10.1 ms | 10.9 / 17.3 / 23.0 ms (0/1200) | 100.0 Hz, 간격 p99 12.3 ms |
+| C. YOLO 최대(20 fps) | CPU 25%, GPU 32% | 5.3 / 9.3 / 23.0 ms | 6.2 / 10.0 ms | 11.1 / 17.2 / 21.9 ms (0/1200) | 100.0 Hz, 간격 p99 12.3 ms |
 
-- 편도 값은 PX4가 타임스탬프를 Agent 시계로 옮겨 주는 기능(`UXRCE_DDS_SYNCT=1`)에 기대며, 오차는 timesync 왕복의 절반(약 ±0.4 ms) 이내입니다.
+YOLO 자체 지연(프레임 취득 → 결과): B p50 48 / p95 76 ms, C p50 54 / p95 69 ms. 추론만은 약 10~14 ms이고,
+나머지는 1080p 프레임의 CPU 전처리(9~14 ms)·후처리(6~8 ms)와 Python 처리입니다. 최대 속도에서도 CPU 25%, GPU 32%라서
+병목은 하드웨어가 아니라 단일 스레드 Python 파이프라인입니다.
+
+해석:
+- **YOLO 부하는 PX4 링크에 영향을 주지 않았습니다.** 세 조건의 편도·왕복·오도메트리 간격이 측정 오차 안에서 같습니다.
+- 링크 지연(편도 약 5 ms, p95 약 9 ms)은 정책 주기(20 Hz, 50 ms)보다 한 자릿수 작습니다. 지연 DR 0~1 step이면 충분합니다.
+- **인식 지연은 다릅니다.** YOLO 결과는 프레임 취득 후 약 50~75 ms 뒤에 나오므로, 인식을 정책 입력에 넣을 때는 1~2 step(50~100 ms) 지연을 모델링해야 합니다.
 - 명령 왕복에는 PX4 commander의 처리 주기가 들어가므로 실제 Jetson → Pixhawk 전송 지연보다 큽니다.
-- 정책 주기(20 Hz, 50 ms)보다 한 자릿수 작으므로 지연 DR 0~1 step이면 충분합니다. 오도메트리가 약 100 Hz로 들어오므로 100 Hz 투하 게이트에도 매 주기 새 값이 있습니다.
-- 시동 시 로거 부하, 정책 노드·YOLO 동시 실행 조건에서는 다시 재야 합니다(프로펠러 분리 후).
+
+측정 시 주의(시계):
+- PX4는 메시지 타임스탬프를 Jetson 시계로 바꿀 때 **필터로 다듬은 오프셋**을 씁니다. Jetson은 부팅 때 1970년으로 시작했다가 NTP가 시계를 맞추는 동안 천천히 조정(slew)되므로,
+  이때 필터가 33~58 ms 늦어져 원시 편도 값(`uplink_ms`)이 38~63 ms로 부풀었습니다. 표의 값은 패킷마다 바로 측정한 오프셋(`observed_offset`)으로 다시 계산한 `uplink_ms_corrected`입니다.
+- 인터넷이 없는 비행장에서는 NTP 조정이 없으므로 이 편향이 생기지 않습니다. 현재 노드는 PX4 메시지의 `timestamp`를 제어에 쓰지 않으므로 비행 제어에는 영향이 없습니다.
+- 2026-10-28 00:14의 첫 측정(`link_usb_20261028_0014.json`, 편도 p50 3.0 ms)은 이 보정이 없던 값이라 기준값으로 쓰지 않습니다.
 
 측정 방법:
 
 ```bash
-MicroXRCEAgent serial --dev /dev/pixhawk -b 921600                                 # 터미널 1
-python3 scripts/measure_link_latency.py --duration 60 --json measurements/link.json  # 터미널 2
+MicroXRCEAgent serial --dev /dev/pixhawk -b 921600                                          # 터미널 1
+~/yolo-venv/bin/python scripts/yolo_load.py --model ~/yolo_models/yolo11n.engine --fps 10    # 터미널 2 (선택: 부하)
+python3 scripts/measure_link_latency.py --duration 60 --json measurements/link.json           # 터미널 3
 ```
+
+TensorRT 엔진 만들기: `cd ~/yolo_models && ~/yolo-venv/bin/yolo export model=yolo11n.pt format=engine half=True imgsz=640`
 
 ## 가중치 갱신
 
