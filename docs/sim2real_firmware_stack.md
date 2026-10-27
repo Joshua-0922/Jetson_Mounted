@@ -10,6 +10,11 @@ type: research
 
 # sim2real (4) 펌웨어·배포 스택 — PX4 offboard 속도, ROS 2 노드, 관측 26채널 출처, SITL
 
+> **2026-10-27 갱신: 실기 펌웨어를 PX4 v1.16.2로 확정했다**(Pixhawk 6C Mini 출고 펌웨어, Gazebo Harmonic LTS 대응). 컴패니언은 Jetson Orin Nano(JetPack 7, Ubuntu 24.04) + ROS 2 Jazzy, `px4_msgs`는 `release/1.16`이다.
+> 아래 본문의 v1.15.4 분석은 그대로 유효하다. v1.15.4와 v1.16.2 소스를 비교한 결과, §1.2의 기본값(`MPC_XY/Z_VEL_P/I/D_ACC`, `MPC_TILTMAX_AIR`, `MPC_Z_VEL_MAX_DN/UP`, `MPC_XY_VEL_MAX`, `MPC_USE_HTE`, `MC_ROLL/PITCH_P`, `MC_ROLLRATE_P`, `COM_OF_LOSS_T`)은 모두 같다.
+> 새로 생긴 파라미터는 `MPC_VEL_LP`·`MPC_VEL_NF_FRQ`(기본 0 = 꺼짐), `MC_YAW_TQ_CUTOFF`(요 토크 2 Hz 저역통과), `UXRCE_DDS_TX_TO/RX_TO`다. 노드가 쓰는 메시지 중 바이트 배치가 바뀐 것은 `VehicleStatus`(v1, avoidance 필드 2개 삭제)뿐이다. 버전이 1 이상인 메시지는 토픽 이름에 `_v<N>`이 붙으므로 상태 토픽은 **`/fmu/out/vehicle_status_v1`**이다(실기에서 확인).
+> SITL airframe은 v1.16의 `4020_gz_tiltrotor`와 번호가 겹쳐 `4900_gz_x500_drop`으로 바꿨다.
+
 ## 교차 검토로 바뀐 점
 
 | # | 바뀐 점 | 원인 | 무엇이 바뀌었나 |

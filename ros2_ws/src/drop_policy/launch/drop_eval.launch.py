@@ -1,9 +1,9 @@
-"""One drop episode in Gazebo Harmonic + PX4 v1.15.4 SITL with the Isaac Lab policy.
+"""One drop episode in Gazebo Harmonic + PX4 v1.16.2 SITL with the Isaac Lab policy.
 
   ros2 launch drop_policy drop_eval.launch.py world:=/tmp/drop_world.sdf params:=/tmp/ep.yaml wind_x:=0 wind_y:=0
 
 Processes: MicroXRCEAgent, gz sim (server, real time), ros_gz_bridge, PX4 SITL attached to the
-pre-spawned x500_drop (airframe 4020_gz_x500_drop), drone_controller (LPF alpha 0.4 = Isaac),
+pre-spawned x500_drop (airframe 4900_gz_x500_drop), drone_controller (LPF alpha 0.4 = Isaac),
 drop_mission_node. The launch ends when drop_mission_node exits (result written).
 """
 import os

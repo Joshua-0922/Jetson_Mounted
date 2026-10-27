@@ -54,8 +54,9 @@ class DroneControllerNode(Node):
             Float32, '/drone/cmd/yaw', self.yaw_command_callback, 10)
         self.target_yaw_ned = float('nan')
 
+        # PX4 1.16 appends _v<MESSAGE_VERSION> to versioned topics (VehicleStatus is v1)
         self.status_sub = self.create_subscription(
-            VehicleStatus, '/fmu/out/vehicle_status',
+            VehicleStatus, '/fmu/out/vehicle_status_v1',
             self.vehicle_status_callback, sub_qos)
 
         # #3: ack stream — lets us log *why* PX4 rejected an arm command

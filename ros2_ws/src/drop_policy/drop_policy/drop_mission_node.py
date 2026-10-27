@@ -59,7 +59,8 @@ class DropMissionNode(Node):
         sub_qos = QoSProfile(reliability=ReliabilityPolicy.BEST_EFFORT, durability=DurabilityPolicy.VOLATILE,
                              history=HistoryPolicy.KEEP_LAST, depth=1)
         self.create_subscription(VehicleOdometry, "/fmu/out/vehicle_odometry", self.odom_cb, sub_qos)
-        self.create_subscription(VehicleStatus, "/fmu/out/vehicle_status", self.status_cb, sub_qos)
+        # PX4 1.16 appends _v<MESSAGE_VERSION> to versioned topics (VehicleStatus is v1)
+        self.create_subscription(VehicleStatus, "/fmu/out/vehicle_status_v1", self.status_cb, sub_qos)
         self.create_subscription(Odometry, "/drop/payload/odom", self.payload_cb, 10)
         self.create_subscription(Odometry, "/drop/drone/odom", self.truth_cb, 10)
         self.truth = None
