@@ -14,6 +14,7 @@ def generate_launch_description():
         'wbmode': ('3', int), 'saturation': ('1.0', float),
         'awb': ('grayworld', str), 'awb_alpha': ('0.1', float),
         'awb_max_gain': ('2.0', float),
+        'stamp': ('sof', str),
     }
     decls = [DeclareLaunchArgument(k, default_value=v) for k, (v, _) in args.items()]
     params = {k: ParameterValue(LaunchConfiguration(k), value_type=t)

@@ -1,7 +1,9 @@
 """IMX219 CSI camera -> ROS 2 sensor_msgs/Image.
 
-Captures through the Jetson ISP (nvarguscamerasrc -> nvvidconv) with OpenCV's
-GStreamer backend, converts with cv_bridge and publishes bgr8 frames.
+Captures through the Jetson ISP (nvarguscamerasrc -> nvvidconv) with a
+GStreamer appsink (PyGObject), converts with cv_bridge and publishes bgr8 frames.
+header.stamp is the sensor start-of-frame time (see gst_capture.py), so
+`now - header.stamp` anywhere downstream is the true capture-to-here latency.
 The /dev/video0 V4L2 node only exposes raw RG10 Bayer, so the Argus path is
 required to get debayered, auto-exposed colour images.
 
@@ -12,26 +14,18 @@ it is the default, and a software gray-world AWB trims the remaining cast and
 follows lighting changes.
 """
 import threading
+import time
 
 import cv2
 import numpy as np
 import rclpy
 from cv_bridge import CvBridge
 from rclpy.node import Node
+from rclpy.time import Time
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 from sensor_msgs.msg import CameraInfo, Image
 
-
-def build_pipeline(sensor_id, width, height, fps, flip_method, wbmode, saturation):
-    return (
-        f'nvarguscamerasrc sensor-id={sensor_id} wbmode={wbmode} '
-        f'saturation={saturation} ! '
-        f'video/x-raw(memory:NVMM),width={width},height={height},'
-        f'framerate={fps}/1,format=NV12 ! '
-        f'nvvidconv flip-method={flip_method} ! video/x-raw,format=BGRx ! '
-        'videoconvert ! video/x-raw,format=BGR ! '
-        'appsink drop=true max-buffers=1 sync=false'
-    )
+from imx219_camera.gst_capture import GstCapture, build_pipeline
 
 
 class GrayWorldAWB:
@@ -86,6 +80,9 @@ class Imx219CameraNode(Node):
         self.declare_parameter('flip_method', 0)   # nvvidconv: 0 none, 2 rotate-180
         self.declare_parameter('frame_id', 'camera_optical_frame')
         self.declare_parameter('best_effort', False)  # True for SensorData-style QoS
+        # header.stamp: 'sof' = sensor start-of-frame (first row read out), 'receive' =
+        # time the frame reached this node (~50 ms later)
+        self.declare_parameter('stamp', 'sof')
         # --- colour ---
         self.declare_parameter('wbmode', 3)          # Argus WB preset, 3 = fluorescent
         self.declare_parameter('saturation', 1.0)    # Argus saturation 0..2
@@ -96,6 +93,9 @@ class Imx219CameraNode(Node):
 
         p = lambda n: self.get_parameter(n).value  # noqa: E731
         self.frame_id = p('frame_id')
+        self.stamp_mode = p('stamp')
+        if self.stamp_mode not in ('sof', 'receive'):
+            raise ValueError(f"stamp must be sof|receive, got '{self.stamp_mode}'")
         self.width, self.height = p('width'), p('height')
 
         awb = p('awb')
@@ -121,10 +121,9 @@ class Imx219CameraNode(Node):
                                   p('flip_method'), p('wbmode'), p('saturation'))
         self.get_logger().info(f'GStreamer pipeline: {pipeline}')
         self.get_logger().info(f'software AWB: {awb}')
-        self.cap = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
-        if not self.cap.isOpened():
-            raise RuntimeError('Failed to open camera pipeline '
-                               '(is nvargus-daemon running / camera busy?)')
+        self.get_logger().info(f'header.stamp = {self.stamp_mode}')
+        self.cap = GstCapture(pipeline)
+        self._age = []  # SOF -> publish (ms), for the periodic report
 
         self._running = True
         self._frames = 0
@@ -133,12 +132,29 @@ class Imx219CameraNode(Node):
         self.create_timer(5.0, self._report)
 
     def _capture_loop(self):
+        try:
+            self._capture_loop_inner()
+        except Exception as e:  # noqa: BLE001
+            # On Ctrl-C rclpy invalidates the context before destroy_node() stops
+            # this thread, so a publish in flight raises RCLError: exit quietly.
+            if self._running and rclpy.ok():
+                self.get_logger().error(f'capture thread died: {e!r}')
+
+    def _capture_loop_inner(self):
         while self._running and rclpy.ok():
-            ok, frame = self.cap.read()
-            if not ok:
-                self.get_logger().warn('Frame grab failed', throttle_duration_sec=2.0)
+            r = self.cap.read(timeout_s=1.0)
+            if r is None:
+                self.get_logger().warn('no frame from camera', throttle_duration_sec=2.0)
                 continue
-            stamp = self.get_clock().now().to_msg()
+            frame, sof_mono, push_mono = r
+            # ROS time (system clock) <- CLOCK_MONOTONIC: offset sampled now.
+            now = self.get_clock().now()
+            offset = now.nanoseconds - time.clock_gettime_ns(time.CLOCK_MONOTONIC)
+            if self.stamp_mode == 'sof' and sof_mono is not None:
+                t_ns = sof_mono + offset
+            else:
+                t_ns = now.nanoseconds
+            stamp = Time(nanoseconds=t_ns).to_msg()
             if self.post is not None:
                 frame = self.post(frame)
             msg = self.bridge.cv2_to_imgmsg(frame, encoding='bgr8')
@@ -151,9 +167,16 @@ class Imx219CameraNode(Node):
             info.width, info.height = frame.shape[1], frame.shape[0]
             self.info_pub.publish(info)
             self._frames += 1
+            if sof_mono is not None:
+                self._age.append((time.clock_gettime_ns(time.CLOCK_MONOTONIC) - sof_mono) / 1e6)
 
     def _report(self):
         msg = f'publishing {self._frames / 5.0:.1f} fps'
+        if self._age:
+            msg += f' | SOF->publish p50 {np.median(self._age):.1f} ms'
+            self._age = []
+        if self.cap.unmatched:
+            msg += f' | frames without SOF: {self.cap.unmatched}'
         if isinstance(self.post, GrayWorldAWB):
             b, g, r = self.post.gains
             msg += f' | AWB gains B={b:.2f} G={g:.2f} R={r:.2f}'

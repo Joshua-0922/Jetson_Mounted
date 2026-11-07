@@ -9,8 +9,10 @@ Jetson(컴패니언 컴퓨터)에서 Pixhawk(PX4)를 offboard 속도 명령으�
 |---|---|
 | `ros2_ws/src/drop_policy` | 정책 추론 + 미션 상태기계 ROS 2 노드 (numpy 전용, torch 불필요). 가중치는 `models/drop_policy_models.npz` |
 | `ros2_ws/src/drone_controller` | 속도 명령을 PX4 `TrajectorySetpoint`(offboard)로 보내는 노드 |
+| `ros2_ws/src/imx219_camera` | IMX219 CSI 카메라 → `/camera/image_raw` (Argus ISP + 소프트웨어 AWB, `header.stamp` = 센서 SOF 시각) |
+| `ros2_ws/src/yolo_detector` | `/camera/image_raw` → YOLO(`models/best.pt`, `x_marker`) → `/yolo/detections`, `/yolo/image_annotated`, `/yolo/timing` |
 | `sitl/gazebo_models` | Gazebo 기체·페이로드·월드와 PX4 airframe(`4900_gz_x500_drop`). Jetson 또는 PC에서 SITL 검증할 때 사용 |
-| `scripts/` | Jetson 설치(`setup_jetson.sh`)·점검(`verify_jetson.sh`), Pixhawk USB uXRCE-DDS 설정(`px4_usb_xrce.py`), 링크 지연 측정(`measure_link_latency.py`), YOLO 부하(`yolo_load.py`) |
+| `scripts/` | Jetson 설치(`setup_jetson.sh`)·점검(`verify_jetson.sh`), Pixhawk USB uXRCE-DDS 설정(`px4_usb_xrce.py`), 링크 지연 측정(`measure_link_latency.py`), YOLO 부하(`yolo_load.py`), 카메라→YOLO 지연 측정(`measure_yolo_latency.py`, `argus_sof_probe.cpp`) |
 | `measurements/` | 실측 원자료(JSON) |
 | `docs/` | 배포 스택 결정(`sim2real_firmware_stack`)과 시뮬 제어기 정렬(`sim2real_controller_alignment`) |
 
@@ -99,7 +101,7 @@ YOLO 자체 지연(프레임 취득 → 결과): B p50 48 / p95 76 ms, C p50 54 
 해석:
 - **YOLO 부하는 PX4 링크에 영향을 주지 않았습니다.** 세 조건의 편도·왕복·오도메트리 간격이 측정 오차 안에서 같습니다.
 - 링크 지연(편도 약 5 ms, p95 약 9 ms)은 정책 주기(20 Hz, 50 ms)보다 한 자릿수 작습니다. 지연 DR 0~1 step이면 충분합니다.
-- **인식 지연은 다릅니다.** YOLO 결과는 프레임 취득 후 약 50~75 ms 뒤에 나오므로, 인식을 정책 입력에 넣을 때는 1~2 step(50~100 ms) 지연을 모델링해야 합니다.
+- **인식 지연은 다릅니다.** 위 50~75 ms는 영상 파일을 읽은 시점부터 잰 값입니다. 실제 카메라의 센서 노출부터 재면 약 100~120 ms이고, 정책 입력에는 2~3 step 지연이 필요합니다. 아래 "카메라 → YOLO 인식 지연"을 참고하십시오.
 - 명령 왕복에는 PX4 commander의 처리 주기가 들어가므로 실제 Jetson → Pixhawk 전송 지연보다 큽니다.
 
 측정 시 주의(시계):
@@ -117,6 +119,48 @@ python3 scripts/measure_link_latency.py --duration 60 --json measurements/link.j
 ```
 
 TensorRT 엔진 만들기: `cd ~/yolo_models && ~/yolo-venv/bin/yolo export model=yolo11n.pt format=engine half=True imgsz=640`
+
+## 카메라 → YOLO 인식 지연 (IMX219, sim2real 지연 모델)
+
+2026-11-05 23:11, 실내, Jetson 25W 모드, 조건별 60초. 원자료: `measurements/yolo_latency_20261105_2311_{A,B}.json`.
+구성: IMX219 센서 모드 2(1920×1080@30) → ISP에서 1280×720으로 축소, `best.pt`(YOLOv8n, PyTorch FP16, imgsz 640), 노드 2개(`imx219_camera`, `yolo_detector`)는 같은 Jetson에서 DDS로 통신.
+
+**시간 기준은 센서 SOF(start-of-frame, 첫 줄이 센서에서 나온 시각)입니다.** `imx219_camera`가 `header.stamp`에 Argus 센서 타임스탬프를 넣습니다.
+이 값은 `nvarguscamerasrc show-latency=true`가 프레임마다 남기는 SOF→버퍼 출력 지연 로그에서 복원하며, 시계는 `CLOCK_MONOTONIC`입니다.
+따라서 하위 노드 어디서든 `now - header.stamp`가 그대로 촬영 시점부터의 지연입니다.
+
+| 조건 | 결과 주기 | 버린 카메라 프레임 | SOF → 결과 수신 p50 / p95 / p99 / 최대 | 평균 ± 표준편차 | 무작위 시점에서 본 최신 결과의 나이 p50 / p95 / 최대 |
+|---|---|---|---|---|---|
+| A. 박스 이미지 발행 켬(기본) | 27.7 Hz | 7.9% | 115.1 / 128.2 / 131.2 / 139.8 ms | 113.2 ± 12.5 ms | 132.3 / 155.5 / 186.4 ms |
+| **B. 박스 이미지 끔 (비행용)** | **29.6 Hz** | **1.4%** | **103.0 / 113.3 / 121.0 / 141.0 ms** | **102.1 ± 9.8 ms** | **119.6 / 138.9 / 173.3 ms** |
+
+조건 B의 구간별 지연(p50, SOF 기준 누적):
+
+| 구간 | 누적 | 구간 소요 | 측정 방법 |
+|---|---|---|---|
+| SOF → Argus 프레임 출력 | 36 ms | 36 ms (줄 읽기 20.4 ms + ISP) | `argus_sof_probe.cpp` |
+| → nvarguscamerasrc 버퍼 출력 | 43 ms | 7 ms | `show-latency` 로그 |
+| → appsink(BGR 변환 후) | 51 ms | 8 ms | GStreamer PTS |
+| → 카메라 노드 발행 | 65 ms | 14 ms (복사, AWB, cv_bridge, 2.7 MB 발행) | 노드 로그 |
+| → 검출 노드 수신 | 74 ms | 9 ms (DDS 전송 + 앞 프레임 추론 대기) | `/yolo/timing` |
+| → YOLO 추론 끝, 결과 발행 | 102 ms | 25 ms 추론 + 2 ms | `/yolo/timing` |
+| → 다른 노드 수신 | 103 ms | 1 ms | `measure_yolo_latency.py` |
+
+시뮬 지연 모델(조건 B 기준):
+- **검출 지연**: SOF 기준 `D ~ N(102, 10²) ms`, [90, 141] ms로 자름. 결과는 약 30 Hz(33.8 ms 간격)로 나오고, 1.4%는 빠집니다.
+- **노출 보정**: 장면을 실제로 본 시각(노출 중간)은 SOF보다 이릅니다. 영상 y행(높이 H)에 있는 목표의 지연은 `D + exposure/2 − (y/H)·readout`이며, readout은 20.4 ms입니다.
+  실내에서는 노출이 33 ms까지 길어지므로(+16.5 ms) 화면 중앙 기준 약 109 ms입니다. 밝은 실외에서 노출이 1 ms 미만이면 화면 중앙 기준 약 93 ms입니다. 실외 노출은 `argus_sof_probe`로 다시 확인하십시오.
+- **정책 입력(20 Hz, 50 ms)**: 정책이 받는 최신 결과의 나이는 약 95~175 ms(p50 120 ms)입니다. 따라서 **지연 DR은 2~3 step**이 적절합니다. 링크 지연(0~1 step)과는 별개로 넣어야 합니다.
+- 박스 이미지 발행을 켜면 콜백마다 그리기와 발행이 3~4 ms 늘어납니다. 그러면 검출 노드가 카메라 속도(30 Hz)를 못 따라가서 프레임 대기가 생기고, 지연이 약 12 ms 늘어납니다. 비행에서는 `publish_annotated:=false`를 쓰십시오.
+
+측정 방법:
+
+```bash
+ros2 launch yolo_detector yolo.launch.py publish_annotated:=false                     # 터미널 1
+python3 scripts/measure_yolo_latency.py --duration 60 --json measurements/yolo.json    # 터미널 2
+```
+
+지연을 줄일 여지: TensorRT 엔진(`model:=...engine`)으로 추론 25 ms를 줄일 수 있습니다. 카메라와 검출을 한 프로세스로 합치면 14 + 9 ms 중 상당 부분(2.7 MB 이미지 복사와 전송)이 사라집니다.
 
 ## 가중치 갱신
 

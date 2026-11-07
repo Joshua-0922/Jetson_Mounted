@@ -4,3 +4,6 @@ build/
 install/
 log/
 ros2_ws/src/px4_msgs/
+# TensorRT engines are tied to the GPU + TensorRT version; rebuild from best.pt
+*.engine
+*.onnx
