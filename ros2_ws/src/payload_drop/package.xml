@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>payload_drop</name>
+  <version>0.1.0</version>
+  <description>Servo payload release (MAV_CMD_DO_SET_ACTUATOR) from the ground PC over the telemetry radio, and drop-latency analysis from the PX4 ulog</description>
+  <maintainer email="nachoigpt@gmail.com">Joshua-0922</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <!-- pymavlink and pyulog come from pip; there is no rosdep key on Jazzy -->
+
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

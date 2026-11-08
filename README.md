@@ -9,6 +9,7 @@ Jetson(컴패니언 컴퓨터)에서 Pixhawk(PX4)를 offboard 속도 명령으�
 |---|---|
 | `ros2_ws/src/drop_policy` | 정책 추론 + 미션 상태기계 ROS 2 노드 (numpy 전용, torch 불필요). 가중치는 `models/drop_policy_models.npz` |
 | `ros2_ws/src/drone_controller` | 속도 명령을 PX4 `TrajectorySetpoint`(offboard)로 보내는 노드 |
+| `ros2_ws/src/payload_drop` | 지상 PC → 무선(MAVLink) `DO_SET_ACTUATOR`로 FMU PWM 서보(MG90D) 투하, PX4 ulog로 투하 지연(명령 → 출력 → 분리 센서) 단계별 측정 |
 | `ros2_ws/src/imx219_camera` | IMX219 CSI 카메라 → `/camera/image_raw` (Argus ISP + 소프트웨어 AWB, `header.stamp` = 센서 SOF 시각) |
 | `ros2_ws/src/yolo_detector` | `/camera/image_raw` → YOLO(`models/best.pt`, `x_marker`) → `/yolo/detections`, `/yolo/image_annotated`, `/yolo/timing` |
 | `sitl/gazebo_models` | Gazebo 기체·페이로드·월드와 PX4 airframe(`4900_gz_x500_drop`). Jetson 또는 PC에서 SITL 검증할 때 사용 |

@@ -1,0 +1,39 @@
+# payload_drop: PX4 ulog topics for drop-latency tests.
+# Copy to the SD card as  /etc/logging/logger_topics.txt  (QGC: Analyze Tools > MAVLink Console, or card reader)
+# While this file exists PX4 logs ONLY these topics and ignores SDLOG_PROFILE. Remove it after the tests.
+# Format: <topic> <interval_ms> [instance]; interval 0 = every update; no instance = all instances.
+
+# --- drop chain (full rate) ---
+actuator_outputs 0
+vehicle_command 0
+vehicle_command_ack 0
+camera_trigger 0
+camera_capture 0
+actuator_armed 0
+
+# --- IMU (release signature, vibration) ---
+sensor_combined 0
+vehicle_acceleration 0
+vehicle_angular_velocity 0
+
+# --- flight state, so the log still makes sense in Flight Review ---
+vehicle_status 0
+vehicle_land_detected 0
+failsafe_flags 200
+vehicle_attitude 0
+vehicle_attitude_setpoint 0
+vehicle_rates_setpoint 0
+vehicle_local_position 0
+vehicle_local_position_setpoint 0
+trajectory_setpoint 0
+vehicle_global_position 200
+vehicle_gps_position 200
+estimator_status 200
+actuator_motors 0
+vehicle_thrust_setpoint 0
+vehicle_torque_setpoint 0
+manual_control_setpoint 0
+input_rc 200
+battery_status 200
+telemetry_status 1000
+cpuload 500
