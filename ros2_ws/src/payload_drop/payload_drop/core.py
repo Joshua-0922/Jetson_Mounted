@@ -1,6 +1,6 @@
 """Drop commands, ACK bookkeeping and PX4 output-configuration checks (no ROS here, unit-testable).
 
-Hardware this is written for: Pixhawk 6C Mini, ESCs on I/O PWM OUT (PWM_MAIN_*), MG90D servo on
+Hardware this is written for: Pixhawk 6C Mini, ESCs on I/O PWM OUT (PWM_MAIN_*), MG90S servo on
 FMU PWM OUT (PWM_AUX_*), output function 'Peripheral via Actuator Set N' (= 300 + N).
 """
 import threading
@@ -87,7 +87,7 @@ def review_config(params, actuator_set, open_value, close_value, mode):
         warnings.append(f'servo on I/O MAIN{ch}: the command takes an extra hop through the IO '
                         'processor; FMU PWM (AUX) is the lower-latency path')
     if cfg.rate_hz != 50:
-        warnings.append(f'PWM_{bank}_TIM{TIMER_GROUP[bank][ch]}={cfg.rate_hz:g}: MG90D is an analog '
+        warnings.append(f'PWM_{bank}_TIM{TIMER_GROUP[bank][ch]}={cfg.rate_hz:g}: MG90S is an analog '
                         'servo, use 50 Hz (outputs in the same timer group share this rate)')
     if not (cfg.pmin < cfg.pmax):
         errors.append(f'PWM_{bank}_MIN{ch}/MAX{ch} = {cfg.pmin:g}/{cfg.pmax:g}: need MIN < MAX')

@@ -1,0 +1,9 @@
+pair,n,pearson_r,pearson_p,spearman_rho,spearman_p
+D_vs_trial_order,19,-0.4942,0.0315,-0.4789,0.038
+D_lag1_autocorr,18,0.3365,0.1721,0.3086,0.2128
+servo_to_slider_vs_slider_to_release,19,-0.7876,0.0001,-0.7661,0.0001
+D_vs_servo_to_slider,19,-0.4753,0.0397,-0.538,0.0175
+D_vs_ack_rtt,19,0.1594,0.5144,0.0351,0.8866
+D_vs_threshold_method,19,0.8657,0.0,0.8055,0.0
+v1_vs_v2_welch_t,,3.7051,0.0051,,
+v1_vs_v2_levene,,,0.0319,,

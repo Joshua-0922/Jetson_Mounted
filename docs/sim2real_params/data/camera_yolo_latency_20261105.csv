@@ -1,0 +1,16 @@
+condition,config,rate_hz,skip_ratio,metric,n,mean,std,min,p50,p95,p99,max
+A,publish_annotated=true,27.66,0.0793,sof_to_detection_received,1660,113.2333,12.4613,42.2304,115.0655,128.1921,131.1936,139.7999
+A,publish_annotated=true,27.66,0.0793,sof_to_detector_receive,1660,83.7214,12.3017,13.4957,85.5665,97.8981,101.4739,105.8104
+A,publish_annotated=true,27.66,0.0793,imgmsg_to_cv2,1660,0.6782,0.066,0.6105,0.6583,0.8194,0.9314,1.2743
+A,publish_annotated=true,27.66,0.0793,predict,1660,26.0456,1.5287,24.0337,25.5773,29.1825,31.4824,36.1919
+A,publish_annotated=true,27.66,0.0793,sof_to_detections_publish,1660,112.0237,12.3883,40.86,113.7439,126.8797,130.1032,138.7118
+A,publish_annotated=true,27.66,0.0793,sof_to_annotated_publish,1660,115.264,12.3934,44.0776,117.0276,130.2216,133.6333,142.2017
+A,publish_annotated=true,27.66,0.0793,inter_arrival,1659,36.153,3.7496,23.5348,35.0033,43.3924,48.8529,76.4969
+A,publish_annotated=true,27.66,0.0793,held_age_random_query,20000,131.3219,16.5665,42.518,132.2965,155.4672,163.7168,186.4144
+B,publish_annotated=false,29.6,0.0144,sof_to_detection_received,1776,102.0666,9.8322,39.9036,102.9713,113.3299,120.9696,140.9558
+B,publish_annotated=false,29.6,0.0144,sof_to_detector_receive,1776,72.7915,9.8424,11.5065,73.6977,83.796,91.892,101.5974
+B,publish_annotated=false,29.6,0.0144,imgmsg_to_cv2,1776,0.6986,0.1063,0.6221,0.6807,0.8164,0.9076,3.9786
+B,publish_annotated=false,29.6,0.0144,predict,1776,25.8657,1.5918,23.9282,25.3414,29.2725,31.7906,36.2494
+B,publish_annotated=false,29.6,0.0144,sof_to_detections_publish,1776,100.8828,9.8457,38.9459,101.7976,112.1513,119.9923,139.9396
+B,publish_annotated=false,29.6,0.0144,inter_arrival,1775,33.7861,5.9975,26.4041,31.989,44.5847,55.3903,79.401
+B,publish_annotated=false,29.6,0.0144,held_age_random_query,20000,119.0091,14.2953,41.4368,119.6376,138.8548,149.6087,173.2697

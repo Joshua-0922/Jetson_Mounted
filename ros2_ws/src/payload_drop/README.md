@@ -1,6 +1,6 @@
 # payload_drop
 
-The ground PC sends a drop command to the Pixhawk over the telemetry radio (MAVLink). PX4 then moves the MG90D servo on an FMU PWM output and opens the latch.
+The ground PC sends a drop command to the Pixhawk over the telemetry radio (MAVLink). PX4 then moves the MG90S servo on an FMU PWM output and opens the latch.
 The package also **measures the drop delay stage by stage** from the PX4 ulog. The Jetson is not used today. On the Jetson, the same command can be sent over uXRCE-DDS as `/fmu/in/vehicle_command`.
 
 ```
@@ -28,8 +28,8 @@ The policy (`drop_policy`'s `release_delay`) should get Jetson link (already mea
 | Item | Connection | Why |
 |---|---|---|
 | ESC ×4 | **I/O PWM OUT 1–4** (`PWM_MAIN_*`, 400 Hz) | No DShot support, so they stay on I/O as now |
-| MG90D servo | **FMU PWM OUT 1** (`PWM_AUX_*` 1, 50 Hz) | FMU skips the extra hop through the IO processor. The timer group (AUX1–4) is separate from the ESCs, so it can use its own 50 Hz rate |
-| Servo power | **5 V BEC** into the servo rail (+, −). Common ground with the Pixhawk | The Pixhawk does not power the PWM rail. The MG90D draws hundreds of mA when stalled |
+| MG90S servo | **FMU PWM OUT 1** (`PWM_AUX_*` 1, 50 Hz) | FMU skips the extra hop through the IO processor. The timer group (AUX1–4) is separate from the ESCs, so it can use its own 50 Hz rate |
+| Servo power | **5 V BEC** into the servo rail (+, −). Common ground with the Pixhawk | The Pixhawk does not power the PWM rail. The MG90S draws hundreds of mA when stalled |
 | Release sensor (optional, recommended) | Photo-interrupter (slot type, digital output) → **FMU PWM OUT 5** signal pin | Its edge is timestamped by a hardware timer into the ulog (`camera_trigger`) |
 
 - Put the release sensor in a **different timer group** from the servo (AUX1–4 = TIM1, AUX5–6 = TIM4, from the `fmu-v6c` source). If AUX5 isn't brought out on the 6C Mini, use a channel in another group.

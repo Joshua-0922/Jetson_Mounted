@@ -1,0 +1,20 @@
+param,before_20261108,after_20261108,meaning
+PWM_AUX_FUNC1,0,301,FMU1 = Peripheral via Actuator Set 1 (drop servo MG90S)
+PWM_AUX_TIM0,400,50,FMU1-4 PWM rate [Hz]
+PWM_AUX_MIN1,1000,1000,servo pulse at value -1 [us]
+PWM_AUX_MAX1,2000,2000,servo pulse at value +1 [us]
+PWM_AUX_DIS1,1000,1500,disarmed pulse = latch closed [us]
+PWM_AUX_FAIL1,-1,1500,failsafe pulse = latch closed [us] (-1 = default)
+PWM_MAIN_FUNC5,0,301,I/O5 bench-only servo copy (revert to 0)
+PWM_MAIN_TIM2,400,50,I/O5-8 PWM rate [Hz] (revert to 400)
+COM_PREARM_MODE,0,2,servo active while disarmed (bench; revert to 0)
+PWM_MAIN_FUNC1-4,101-104,101-104,ESC motors on I/O1-4 (no DShot)
+PWM_MAIN_TIM0/TIM1,400,400,ESC PWM rate [Hz]
+PWM_MAIN_MIN1-4,1100,1100,ESC min [us]
+PWM_MAIN_MAX1-4,1900,1900,ESC max [us]
+PWM_MAIN_DIS1-4,1000,1000,ESC disarmed [us]
+SDLOG_MODE,0,0,ulog only while armed
+MAV_0_CONFIG,101,101,MAVLink on TELEM1 (radio)
+SER_TEL1_BAUD,57600,57600,TELEM1 baud
+drop_close_pulse_us,,1500,actuator value 0.0
+drop_open_pulse_us,,1875,actuator value +0.75 (all 26 trials)

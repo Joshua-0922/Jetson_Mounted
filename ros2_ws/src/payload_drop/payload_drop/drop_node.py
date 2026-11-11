@@ -1,4 +1,4 @@
-"""Payload drop node (ground PC -> telemetry radio -> Pixhawk -> FMU PWM -> MG90D servo).
+"""Payload drop node (ground PC -> telemetry radio -> Pixhawk -> FMU PWM -> MG90S servo).
 
     ros2 run payload_drop drop --ros-args -p connection:=udpin:127.0.0.1:14560
     ros2 run payload_drop drop --ros-args -p connection:=udpin:127.0.0.1:14560 -p mode:=bench
